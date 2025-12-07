@@ -1,0 +1,608 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("fonts/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url("fonts/Nunito/Nunito-VariableFont_wght.ttf") format("truetype");
+}
+
+.color{
+    color: #C7A17A;
+}
+
+.line{
+    text-decoration: line-through;
+}
+
+.main-header {
+    position: relative;
+    height: 700px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+.logo {
+    position: absolute;
+    left: 40px;
+    top: 10%;
+    transform: translateY(-50%);
+    width: 200px;
+    z-index: 3;
+}
+
+.banner {
+    position: absolute;
+    height: 100%;
+    width: auto;
+    right: 280px;
+}
+
+.overlay-title {
+    position: absolute;
+    bottom: 40px;
+    left: 300px;
+    z-index: 3;
+    font-family: "Montserrat";
+    font-weight: 900;
+    font-size: 54px;
+    line-height: 1.1;
+    color: #333;
+    margin: 0;
+}
+
+.highlight {
+    background-color: #C7A17A;
+    color: white;
+    padding: 4px 12px;
+    display: inline-block;
+}
+
+.nav-panel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 280px;
+    height: 100%;
+    background-color: #415167;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 24px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.cart-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.cart-btn img {
+    width: 24px;
+    height: 24px;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-family: "Nunito";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.main-nav a:hover {
+    opacity: 0.9;
+}
+
+.block1-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 470px;
+}
+
+.block1-content{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block1-content h2 {
+    font-family: "Nunito";
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.block1-content p {
+    font-family: "Montserrat";
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 34px;
+    text-align: center;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    margin-top: 40px;
+    height: 350px;
+}
+
+.card {
+    width: 220px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    font-family: "Nunito";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: 12px;
+}
+
+.card p {
+    font-family: "Nunito";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 8px;
+}
+
+.block2_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 900px;
+    background: linear-gradient(to right, #415167 30%, transparent 30%);
+}
+
+.block2_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.block2_content h2 {
+    font-family: "Nunito";
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.block2_content p {
+    font-family: "Montserrat";
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 34px;
+    text-align: center;
+}
+
+.cards-container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    margin: 40px 0;
+}
+
+.card2 {
+    background-color: #fff;
+    display: flex;
+    width: 500px;
+    height: 270px;
+    box-sizing: border-box;
+}
+
+.card21 {
+    background-color: #fff;
+    display: flex;
+    width: 500px;
+    height: 270px;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #EDF0F5 50%, #f8fbfe 30%);
+}
+
+.card2 img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card2-text {
+    width: 50%;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    box-sizing: border-box;
+}
+
+.card2-text > p:first-child {
+    font-family: "Nunito";
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #C7A17A;
+}
+
+.card2-text h3 {
+    font-family: "Nunito";
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.card2-text p:not(:first-child) {
+    font-family: "Nunito";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.card2-button {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: auto;
+}
+
+.btn12 {
+    background-color: #C7A17A; 
+    color: white;
+    border: none;
+    border-radius: 12px;
+    width: 100px;
+    height: 30px;
+    font-family: "Nunito";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.btn12:hover {
+    background-color: #b58f6a; 
+}
+
+.btn12:active {
+    background-color: #9e7855;
+}
+
+.btn22 {
+    background-color: #fff; 
+    color: #415167;
+    border: none;
+    font-family: "Nunito";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.btn22:hover {
+    color: #2a3a50;
+}
+
+.btn22:active {
+    color: #1a2533;
+}
+
+.block3_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    background: linear-gradient(to right, #EDF0F5 70%, #f8fbfe 70%);
+}
+
+.block3_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+    height: 550px;
+    box-sizing: border-box;
+}
+
+.block3_content h2 {
+    font-family: "Nunito";
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.block3_content p {
+    font-family: "Montserrat";
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 34px;
+    text-align: center;
+}
+
+.card3 {
+    background: #fff;
+    display: flex;
+    max-width: 1000px;
+    height: 450px;
+    width: 100%;
+    margin-top: auto;
+    overflow: hidden;
+    background: linear-gradient(to right, #EDF0F5 25%, #fff 25%)
+}
+
+.card3 img {
+    width: 40%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.card3-text {
+    width: 60%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.card3-text > p:first-child {
+    font-family: "Nunito";
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: left;
+    color: #C7A17A;
+}
+
+.card3-text h4 {
+    font-family: "Nunito";
+    font-weight: 600;
+    font-size: 20px;
+    text-align: left;
+    line-height: 24px;
+}
+
+.card3-text p:not(:first-child) {
+    font-family: "Nunito";
+    font-weight: 400;
+    font-size: 16px;
+    text-align: left;
+    line-height: 20px;
+}
+
+.card3-sub {
+    display: flex;
+    gap: 0px;
+    align-items: flex-start;
+}
+
+.card3-subs{
+    display: flex;
+    gap: 100px;
+}
+
+.card3-sub img {
+    width: 24px;
+    height: 24px;
+    margin-top: 4px;
+}
+
+.card3-sub div p:first-child {
+    font-family: "Nunito";
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.card3-sub div p:last-child {
+    font-family: "Nunito";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.card3-buttons {
+    display: flex;
+    gap: 150px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.btn13 {
+    background-color: #C7A17A; 
+    color: white;
+    border: none;
+    border-radius: 12px;
+    width: 120px;
+    height: 40px;
+    font-family: "Nunito";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.btn13:hover {
+    background-color: #b58f6a; 
+}
+
+.btn13:active {
+    background-color: #9e7855;
+}
+
+.btn23 {
+    background-color: #fff; 
+    color: #415167;
+    border: none;
+    font-family: "Nunito";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.btn23:hover {
+    color: #2a3a50;
+}
+
+.btn23:active {
+    color: #1a2533;
+}
+
+.block4_container {
+    padding: 60px 20px;
+    background: linear-gradient(to right, #f8fbfe 70%, #415167 70%)
+}
+
+.block4_content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block4_content h2 {
+    font-family: "Nunito";
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.block4_content p {
+    font-family: "Montserrat";
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 34px;
+    text-align: center;
+}
+
+.cards-container4 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 10px;
+}
+
+.card4 {
+    background: linear-gradient(to bottom, #EDF0F5 50%, #fefefe 50%);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.card4 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card4-text {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+}
+
+.cost {
+    display: flex; 
+    gap: 10px;
+}
+
+.cost p {
+    font-family: "Nunito";
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #C7A17A;
+}
+
+.card4-text h4 {
+    font-family: "Nunito";
+    font-weight: 600;
+    font-size: 20px;
+    text-align: left;
+    line-height: 24px;
+}
+
+.card4-text p:not(.cost p) {
+    font-family: "Nunito";
+    font-weight: 400;
+    text-align: left;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.card4-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: auto
+}
+
+.card4-buttons button {
+    font-family: "Nunito";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.block5-container{
+    background-color: #EDF0F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+.block5-container p {
+    font-family: "Nunito";
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+}
